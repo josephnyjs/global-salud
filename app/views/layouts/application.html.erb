@@ -1,18 +1,22 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Workspace</title>
+  <title>Web</title>
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:700" rel="stylesheet">
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
 </head>
   <body>
     <header>
-      <nav class="be-red white">
-        <ul class="no-list row center-xs">
+      <nav class="be-red white large-padding">
+        <ul class="no-list row center-xs middle-xs">
           <li class="col-md">
-          <%= link_to  "Inicio", root_path %>   #"Inicio" es el texto que va a mostrar y root_path 
-                                                #es la ruta adonde lo manda
+             <h1 class="no-margin" id="logo"> Aplicación Web </h1>
+          </li>
+          <li class="col-md">
+          <%= link_to  "Inicio", root_path %> 
+                                              
           </li>
           <li class="col-md">
             Diseño
