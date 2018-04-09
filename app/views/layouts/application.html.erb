@@ -6,7 +6,26 @@
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
 </head>
-<body>
+  <body>
+    <header>
+      <nav class="be-red white">
+        <ul class="no-list row center-xs">
+          <li class="col-md">
+          <%= link_to  "Inicio", root_path %>   #"Inicio" es el texto que va a mostrar y root_path 
+                                                #es la ruta adonde lo manda
+          </li>
+          <li class="col-md">
+            Diseño
+          </li>
+          <li class="col-md">
+            Programacion
+          </li>
+          <li class="col-md">
+            Teconologia
+          </li>
+        </ul>
+      </nav>
+    </header>
 
 <%= yield %>
 
